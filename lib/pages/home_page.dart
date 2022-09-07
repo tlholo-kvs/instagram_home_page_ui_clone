@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_home_page_ui_clone/widgets/feed_post_column.dart';
 import '../widgets/bottom_nav_bar.dart';
 import '../widgets/stories_column.dart';
 
@@ -96,7 +97,25 @@ class HomePage extends StatelessWidget {
           ),
           Expanded(
             child: ListView(
-              children: const [],
+              children: const [
+                //Used to display a Feed post
+                FeedPostColumn(
+                  assetName: 'sunset-picture.jpg',
+                  usernameText: 'new_day',
+                  datePosted: 'SEP 5',
+                ),
+                FeedPostColumn(
+                  assetName: 'starbucks-coffee.kpg',
+                  usernameText: 'influenza',
+                  datePosted: 'SEP 9',
+                ),
+                FeedPostColumn(
+                  assetName:
+                      'Jag_XF_22MY_02_R-Dynamic_Black_Front_3-4_250821.webp',
+                  usernameText: 'jag_pictures',
+                  datePosted: 'SEP 2',
+                ),
+              ],
             ),
           ),
         ],

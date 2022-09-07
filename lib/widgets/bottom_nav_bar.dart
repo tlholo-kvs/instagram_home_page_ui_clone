@@ -8,8 +8,6 @@ class MyBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      backgroundColor: Colors.black,
-      fixedColor: Colors.black,
       items: [
         BottomNavigationBarItem(
           icon: IconButton(
