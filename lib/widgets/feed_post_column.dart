@@ -19,12 +19,20 @@ class FeedPostColumn extends StatelessWidget {
           color: Colors.white,
           child: Row(
             children: [
-              const CircleAvatar(),
+              const Padding(
+                padding: EdgeInsets.only(left: 12.0),
+                child: CircleAvatar(
+                  maxRadius: 5,
+                ),
+              ),
               Text(usernameText),
-              IconButton(
-                onPressed: () {},
-                icon: const ImageIcon(
-                    AssetImage('assets/images/3-dots-menu-vert.png')),
+              Padding(
+                padding: const EdgeInsets.only(left: 180.0),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const ImageIcon(
+                      AssetImage('assets/images/3-dots-menu-vert.png')),
+                ),
               ),
             ],
           ),
@@ -41,17 +49,31 @@ class FeedPostColumn extends StatelessWidget {
           color: Colors.white,
           child: Row(
             children: [
-              IconButton(
-                  onPressed: () {}, icon: const Icon(Icons.favorite_outline)),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.comment)),
-              IconButton(
-                onPressed: () {},
-                icon: const ImageIcon(
-                  AssetImage('assets/images/ig_dm_icon.png'),
-                  size: 30,
+              Padding(
+                padding: const EdgeInsets.only(left: 18.0, right: 12),
+                child: IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.favorite_outline)),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 12, right: 12),
+                child: IconButton(
+                    onPressed: () {}, icon: const Icon(Icons.comment)),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 12.0, right: 12),
+                child: IconButton(
+                  onPressed: () {},
+                  icon: const ImageIcon(
+                    AssetImage('assets/images/ig_dm_icon.png'),
+                    size: 30,
+                  ),
                 ),
               ),
-              IconButton(onPressed: () {}, icon: const Icon(Icons.save)),
+              Padding(
+                padding: const EdgeInsets.only(left: 180.0),
+                child:
+                    IconButton(onPressed: () {}, icon: const Icon(Icons.save)),
+              ),
             ],
           ),
         ),
